@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="WS_main" />
         <module name="ws_master" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="WS_main" target="1.8" />
       <module name="ws_master" target="1.5" />
     </bytecodeTargetLevel>
   </component>

@@ -1,5 +1,8 @@
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
+
+import java.io.*;
+import java.nio.channels.FileChannel;
 import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
@@ -16,8 +19,21 @@ public class Main {
         int offset;
         float confidence;
         String userRequest;
+        String src;
 
-        Scanner scan = new Scanner(System.in);
+        PrintWriter writer = new PrintWriter("benchOutput.txt", "UTF-8");
+
+        try (BufferedReader br = new BufferedReader(new FileReader("benchInput1.txt"))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] parts = line.split("\\|");
+                userRequest = parts[0];
+                nbPages = Integer.parseInt(parts[1]);
+                aggregMode = Integer.parseInt(parts[2]);
+                offset = Integer.parseInt(parts[3]);
+                confidence = Float.parseFloat(parts[4]);
+
+        /*Scanner scan = new Scanner(System.in);
         System.out.println("Veuillez entrer votre requête:");
         userRequest = scan.nextLine();
         System.out.println("Combien de résultats voulez vous prendre en compte ?");
@@ -30,50 +46,77 @@ public class Main {
         System.out.println("Quel offset de résultat désirez vous ?");
         offset= scan.nextInt();
         System.out.println("Quel niveau de confiance désirez vous ? (Entre 0.4 et 1.0)");
-        confidence = scan.nextFloat();
-        System.out.println("Start Preprocess");
+        confidence = scan.nextFloat();*/
+                System.out.println("Start Preprocess");
 
-        PreprocessService ps = new PreprocessService(System.getProperty("user.dir"),false);
-        try {
-            List<String> a = ps.ProcessQuery(userRequest,nbPages,offset);
-            int i = 0;
-            for (String s:
-                    a) {
-                Set<String> set = ps.ProcessSpotlight(s,confidence);
-                int res = ps.ProcessSparql(set,Integer.toString(i++));
+                long startTime = System.nanoTime();
+
+                PreprocessService ps = new PreprocessService(System.getProperty("user.dir"),false);
+                try {
+                    List<String> a = ps.ProcessQuery(userRequest,nbPages,offset);
+                    int i = 0;
+                    for (String s:
+                            a)
+                        try {
+                            if(i>=nbPages) break;
+                            Set<String> set = ps.ProcessSpotlight(s, confidence);
+                            int res = ps.ProcessSparql(set, Integer.toString(i));
+                            i++;
+                        } catch (Exception ignored) {
+                        }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                long endTime = System.nanoTime();
+
+                long preProcessDuration = (endTime - startTime)/1000000;
+
+                System.out.println("End Preprocess");
+                System.out.println("start Process");
+                startTime = System.nanoTime();
+                for(int i=0;i<nbPages;i++)
+                {
+                    aggregator1.loadModelFromFile(i+".rdf");
+                }
+
+                try {
+                    //postprocessor.process("em.rdf");
+                    Model resultModel = ModelFactory.createDefaultModel();
+                    switch (aggregMode) {
+                        case 11:
+                            resultModel = aggregator1.strictAggregation(1);
+                            break;
+                        case 12:
+                            resultModel = aggregator1.strictAggregation(2);
+                            break;
+                        default:
+                            resultModel = aggregator1.strictAggregation(0);
+                            break;
+                    }
+                    aggregator1.writeOutputFileFromModel(resultModel, userRequest+".rdf");
+                    endTime = System.nanoTime();
+
+                    long processDuration = (endTime - startTime)/1000000;
+                    System.out.println("End process");
+                    System.out.println("RESULT 1 =============================================================");
+
+                    startTime = System.nanoTime();
+                    postprocessor.process(userRequest+".rdf");
+                    endTime = System.nanoTime();
+                    long postProcessDuration = (endTime - startTime)/1000000;
+
+                    writer.println(userRequest + " " + nbPages + " " + aggregMode + " " + offset + " " + confidence );
+                    writer.println("DURATION - pre : " + preProcessDuration + " pro : " + processDuration + " post : " + postProcessDuration);
+                    BufferedReader br2 = new BufferedReader(new FileReader("result.txt"));
+                    while((src = br2.readLine()) != null) {
+                         writer.println(src);
+                    }
+                    writer.println("================================================================================");
+                    writer.println();
+                } catch (Exception e) {e.printStackTrace();}
             }
-        } catch (Exception e) {
-            e.printStackTrace();
         }
-        System.out.println("End Preprocess");
-        System.out.println("start Process");
-
-        for(int i=0;i<nbPages;i++)
-        {
-            aggregator1.loadModelFromFile(i+".rdf");
-        }
-
-        try {
-            //postprocessor.process("em.rdf");
-            Model resultModel = ModelFactory.createDefaultModel();
-            switch (aggregMode) {
-                case 11:
-                    resultModel = aggregator1.strictAggregation(1);
-                    break;
-                case 12:
-                    resultModel = aggregator1.strictAggregation(2);
-                    break;
-                default:
-                    resultModel = aggregator1.strictAggregation(0);
-                    break;
-            }
-            aggregator1.writeOutputFileFromModel(resultModel, userRequest+".rdf");
-            System.out.println("End process");
-            System.out.println("RESULT 1 =============================================================");
-            postprocessor.process(userRequest+".rdf");
-
-        } catch (Exception e) {e.printStackTrace();}
-
+        writer.close();
         System.out.println("end Program");
     }
 

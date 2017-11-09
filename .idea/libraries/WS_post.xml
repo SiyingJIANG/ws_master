@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="WS_post">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/WS_post.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

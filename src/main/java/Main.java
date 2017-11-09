@@ -8,6 +8,7 @@ import java.util.Scanner;
 import java.util.Set;
 
 import fr.insalyon.ws.preprocess.*;
+
 public class Main {
 
     public static void main(String[] args) throws Exception {

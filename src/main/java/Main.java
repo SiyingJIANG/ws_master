@@ -44,14 +44,14 @@ public class Main {
                     long startTime = System.nanoTime();
 
                     PreprocessService ps = new PreprocessService(System.getProperty("user.dir"), false);
+                    int i = 0;
                     try {
                         List<String> a = ps.ProcessQuery(userRequest, nbPages, offset);
-                        int i = 0;
                         for (String s :
                                 a)
                             try {
                                 if (i >= nbPages) break;
-                                Set<String> set = ps.ProcessSpotlight(s, confidence);
+                                Set<String> set = ps.ProcessSpotlight(s, ( i<=10 ? confidence : 0.8f));
                                 int res = ps.ProcessSparql(set, Integer.toString(i));
                                 i++;
                             } catch (Exception ignored) {
@@ -66,8 +66,8 @@ public class Main {
                     System.out.println("End Preprocess");
                     System.out.println("start Process");
                     startTime = System.nanoTime();
-                    for (int i = 0; i < nbPages; i++) {
-                        aggregator1.loadModelFromFile(i + ".rdf");
+                    for (int j = 0; j <= i; j++) {
+                        aggregator1.loadModelFromFile(j + ".rdf");
                     }
 
                     try {
@@ -127,17 +127,19 @@ public class Main {
             System.out.println("Start Preprocess");
 
             PreprocessService ps = new PreprocessService(System.getProperty("user.dir"), false);
+            int i = 0;
             try {
                 List<String> a = ps.ProcessQuery(userRequest, nbPages, offset);
-                int i = 0;
                 for (String s :
                         a)
+
                     try {
                         if (i >= nbPages) break;
-                        Set<String> set = ps.ProcessSpotlight(s, confidence);
+                        Set<String> set = ps.ProcessSpotlight(s, ( i<=10 ? confidence : 0.8f));
                         int res = ps.ProcessSparql(set, Integer.toString(i));
                         i++;
                     } catch (Exception ignored) {
+                        ignored.printStackTrace();
                     }
             } catch (Exception e) {
                 e.printStackTrace();
@@ -145,8 +147,8 @@ public class Main {
 
             System.out.println("End Preprocess");
             System.out.println("start Process");
-            for (int i = 0; i < nbPages; i++) {
-                aggregator1.loadModelFromFile(i + ".rdf");
+            for (int j = 0; j <= i; j++) {
+                aggregator1.loadModelFromFile(j + ".rdf");
             }
 
             try {

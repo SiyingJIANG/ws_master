@@ -147,7 +147,7 @@ public class Main {
 
             System.out.println("End Preprocess");
             System.out.println("start Process");
-            for (int j = 0; j <= i; j++) {
+            for (int j = 0; j < i; j++) {
                 aggregator1.loadModelFromFile(j + ".rdf");
             }
 

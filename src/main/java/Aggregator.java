@@ -72,27 +72,32 @@ public class Aggregator {
     public JSONObject getJSONOutput(HashMap<Statement, Integer> weightMap) throws IOException {
         JSONArray listLinks = new JSONArray();
         JSONArray listNodes = new JSONArray();
-        Set<String> resources = new HashSet<String>();
+        Set<String> resources = new HashSet<>();
+        HashMap<String, Integer> resourcesIndex = new HashMap<>();
+        int i = 0;
         for (HashMap.Entry<Statement, Integer> entry : weightMap.entrySet()) {
-            JSONObject link = new JSONObject();
             String subject = entry.getKey().getSubject().getLocalName();
-            link.put("source", subject);
             String object = entry.getKey().getObject().toString().substring(31, entry.getKey().getObject().toString().length());
-            link.put("target", object);
-            link.put("value", entry.getValue());
-            if ((!object.isEmpty()) && (!subject.isEmpty())) {
-                listLinks.put(link);
-                resources.add(subject);
-                resources.add(object);
-            }
+            resources.add(subject);
+            resources.add(object);
         }
         for (String nodeName : resources) {
             JSONObject node = new JSONObject();
             node.put("name", nodeName);
             node.put("group", 1);
             listNodes.put(node);
-
+            resourcesIndex.put(nodeName, i++);
         }
+        for (HashMap.Entry<Statement, Integer> entry : weightMap.entrySet()) {
+            JSONObject link = new JSONObject();
+            String subject = entry.getKey().getSubject().getLocalName();
+            link.put("source", resourcesIndex.get(subject));
+            String object = entry.getKey().getObject().toString().substring(31, entry.getKey().getObject().toString().length());
+            link.put("target", resourcesIndex.get(object));
+            link.put("value", entry.getValue());
+            listLinks.put(link);
+        }
+
         JSONObject nodes = new JSONObject();
         nodes.put("nodes", listNodes);
         nodes.put("links", listLinks);
@@ -108,7 +113,7 @@ public class Aggregator {
         // UNION AND WEIGHT VALUES COMPUTING
         for (Model g : dataset) {
             /*for(int i = 0; i < g.size(); i++) {
-				union.addTripleFromArray(g.getTriple(i));
+                union.addTripleFromArray(g.getTriple(i));
 			}*/
             union.add(g.difference(union));
             //union.add(union.difference(g));
@@ -195,8 +200,8 @@ public class Aggregator {
 
 
     // DO NOT USE YET
-	/*public boolean setQuery(Model graph) {
-		if(ResultGraph.equals(graph))
+    /*public boolean setQuery(Model graph) {
+        if(ResultGraph.equals(graph))
 			return false;
 		
 		ResultGraph = graph;

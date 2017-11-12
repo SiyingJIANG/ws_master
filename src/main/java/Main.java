@@ -118,7 +118,8 @@ public class Main {
             System.out.println("Veuillez indiquer la méthode d'aggrégation souhaitée:");
             System.out.println("11: Aggrégation 'triviale' (une simple union)");
             System.out.println("12: Aggrégation 'simple' (occurence dans au moins la moitié des réponses)");
-            System.out.println("Un autre nombre: Aggrégation 'stricte' (occurence dans tous les résultats)");
+            System.out.println("13: Aggrégation 'stricte' (occurence dans tous les résultats)");
+            System.out.println("un autre nombre: Aggrégation 'snap'");
             aggregMode = scan.nextInt();
             System.out.println("Quel offset de résultat désirez vous ?");
             offset = scan.nextInt();
@@ -162,8 +163,11 @@ public class Main {
                     case 12:
                         resultModel = aggregator1.strictAggregation(2);
                         break;
-                    default:
+                    case 13:
                         resultModel = aggregator1.strictAggregation(0);
+                        break;
+                    default:
+                        resultModel = aggregator1.SNAPAggregation();
                         break;
                 }
                 aggregator1.writeOutputFileFromModel(resultModel, userRequest + ".rdf");

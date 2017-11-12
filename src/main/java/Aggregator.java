@@ -84,7 +84,7 @@ public class Aggregator {
             JSONObject link = new JSONObject();
             String subject = entry.getKey().getSubject().getLocalName();
             link.put("source", resourcesIndex.get(subject));
-            String object = entry.getKey().getObject().toString().substring(31, entry.getKey().getObject().toString().length());
+            String object = getResourceFromObject(entry.getKey().getObject().toString());
             link.put("target", resourcesIndex.get(object));
             link.put("value", entry.getValue());
             listLinks.put(link);
@@ -350,13 +350,16 @@ public class Aggregator {
         while (iUnionStat1.hasNext()) {
             Statement statement = iUnionStat1.nextStatement();
             String subject = statement.getSubject().getLocalName();
-            String object = statement.getObject().toString().substring(statement.getObject().toString().indexOf("resource")+9, statement.getObject().toString().length());
+            String object = getResourceFromObject(statement.getObject().toString());
             resourceSet.add(subject);
             resourceSet.add(object);
         }
         return resourceSet;
     }
 
+    public String getResourceFromObject(String object){
+        return object.substring(object.indexOf("resource")+9, object.length());
+    }
 
     // DO NOT USE YET
     /*public boolean setQuery(Model graph) {

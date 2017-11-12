@@ -127,7 +127,7 @@ public class Main {
             confidence = scan.nextFloat();
             System.out.println("Start Preprocess");
 
-            PreprocessService ps = new PreprocessService(System.getProperty("user.dir"), false);
+            PreprocessService ps = new PreprocessService(System.getProperty("user.dir"), true);
             int i = 0;
             try {
                 List<String> a = ps.ProcessQuery(userRequest, nbPages, offset);

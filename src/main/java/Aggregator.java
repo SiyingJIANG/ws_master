@@ -350,7 +350,7 @@ public class Aggregator {
         while (iUnionStat1.hasNext()) {
             Statement statement = iUnionStat1.nextStatement();
             String subject = statement.getSubject().getLocalName();
-            String object = statement.getObject().toString().substring(31, statement.getObject().toString().length());
+            String object = statement.getObject().toString().substring(statement.getObject().toString().indexOf("resource")+9, statement.getObject().toString().length());
             resourceSet.add(subject);
             resourceSet.add(object);
         }

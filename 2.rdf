@@ -1,0 +1,8 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dbpedia-fr="http://fr.dbpedia.org/resource/"
+    xmlns:dbpedia-owl="http://dbpedia.org/ontology/">
+  <rdf:Description rdf:about="http://fr.dbpedia.org/resource/École_centrale_de_Lyon">
+    <dbpedia-owl:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/École_centrale_de_Lyon"/>
+  </rdf:Description>
+</rdf:RDF>

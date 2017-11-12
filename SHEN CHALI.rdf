@@ -1,0 +1,272 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://fr.dbpedia.org/property/profession(s)"
+    xmlns:j.1="http://dbpedia.org/ontology/"
+    xmlns:j.2="http://fr.dbpedia.org/property/">
+  <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Mon_oncle_Charlie">
+    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Musique_de_film"/>
+    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Série_télévisée"/>
+    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Scénario_(film)"/>
+    <j.1:wikiPageWikiLink>
+      <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Spin_City">
+        <j.1:wikiPageWikiLink>
+          <rdf:Description rdf:about="http://fr.dbpedia.org/resource/New_York">
+            <j.1:wikiPageWikiLink>
+              <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Oliver_Stone">
+                <j.1:wikiPageWikiLink>
+                  <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Série_B">
+                    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Scénario_(film)"/>
+                    <j.1:wikiPageWikiLink>
+                      <rdf:Description rdf:about="http://fr.dbpedia.org/resource/20th_Century_Fox">
+                        <j.1:wikiPageWikiLink>
+                          <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Columbia_Broadcasting_System">
+                            <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/New_York"/>
+                            <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Mon_oncle_Charlie"/>
+                          </rdf:Description>
+                        </j.1:wikiPageWikiLink>
+                      </rdf:Description>
+                    </j.1:wikiPageWikiLink>
+                    <j.1:wikiPageWikiLink>
+                      <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Cinéma_américain">
+                        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/20th_Century_Fox"/>
+                        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Série_télévisée"/>
+                        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Série_B"/>
+                        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Scénario_(film)"/>
+                        <j.1:wikiPageWikiLink>
+                          <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Platoon">
+                            <j.1:wikiPageWikiLink>
+                              <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Charlie_Sheen">
+                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/New_York"/>
+                                <j.1:wikiPageWikiLink>
+                                  <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Rob_Lowe">
+                                    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Acteur"/>
+                                    <j.1:wikiPageWikiLink>
+                                      <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Martin_Sheen">
+                                        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Columbia_Broadcasting_System"/>
+                                        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Oliver_Stone"/>
+                                        <j.1:profession rdf:resource="http://fr.dbpedia.org/resource/Acteur"/>
+                                        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Acteur"/>
+                                        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Charlie_Sheen"/>
+                                        <j.1:wikiPageWikiLink>
+                                          <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Renée_Estevez">
+                                            <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Martin_Sheen"/>
+                                            <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Janet_Templeton"/>
+                                            <j.1:wikiPageWikiLink>
+                                              <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Emilio_Estevez">
+                                                <j.1:profession rdf:resource="http://fr.dbpedia.org/resource/Acteur"/>
+                                                <j.1:wikiPageWikiLink>
+                                                  <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Tom_Cruise">
+                                                    <j.1:wikiPageWikiLink>
+                                                      <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Né_un_4_juillet">
+                                                        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Oliver_Stone"/>
+                                                        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Tom_Cruise"/>
+                                                        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Cinéma_américain"/>
+                                                        <j.1:writer rdf:resource="http://fr.dbpedia.org/resource/Oliver_Stone"/>
+                                                        <j.1:starring rdf:resource="http://fr.dbpedia.org/resource/Tom_Cruise"/>
+                                                        <j.1:director rdf:resource="http://fr.dbpedia.org/resource/Oliver_Stone"/>
+                                                        <j.2:scénario rdf:resource="http://fr.dbpedia.org/resource/Oliver_Stone"/>
+                                                        <j.2:réalisation rdf:resource="http://fr.dbpedia.org/resource/Oliver_Stone"/>
+                                                        <j.2:acteur rdf:resource="http://fr.dbpedia.org/resource/Tom_Cruise"/>
+                                                      </rdf:Description>
+                                                    </j.1:wikiPageWikiLink>
+                                                    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Oliver_Stone"/>
+                                                    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/New_York"/>
+                                                    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Acteur"/>
+                                                    <j.1:profession rdf:resource="http://fr.dbpedia.org/resource/Acteur"/>
+                                                    <j.0:_ rdf:resource="http://fr.dbpedia.org/resource/Acteur"/>
+                                                  </rdf:Description>
+                                                </j.1:wikiPageWikiLink>
+                                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Mon_oncle_Charlie"/>
+                                                <j.1:wikiPageWikiLink>
+                                                  <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Box-office">
+                                                    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Tom_Cruise"/>
+                                                  </rdf:Description>
+                                                </j.1:wikiPageWikiLink>
+                                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Acteur"/>
+                                                <j.1:movie>
+                                                  <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Young_Guns_(film)">
+                                                    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Charlie_Sheen"/>
+                                                    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Martin_Sheen"/>
+                                                    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Emilio_Estevez"/>
+                                                    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Box-office"/>
+                                                    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/20th_Century_Fox"/>
+                                                    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Cinéma_américain"/>
+                                                    <j.1:producedBy rdf:resource="http://fr.dbpedia.org/resource/20th_Century_Fox"/>
+                                                  </rdf:Description>
+                                                </j.1:movie>
+                                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Charlie_Sheen"/>
+                                                <j.0:_ rdf:resource="http://fr.dbpedia.org/resource/Acteur"/>
+                                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Young_Guns_(film)"/>
+                                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/New_York"/>
+                                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Martin_Sheen"/>
+                                                <j.1:birthPlace rdf:resource="http://fr.dbpedia.org/resource/New_York"/>
+                                              </rdf:Description>
+                                            </j.1:wikiPageWikiLink>
+                                            <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Charlie_Sheen"/>
+                                            <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Acteur"/>
+                                            <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/New_York"/>
+                                            <j.1:wikiPageWikiLink>
+                                              <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Ramon_Estevez">
+                                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/New_York"/>
+                                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Janet_Templeton"/>
+                                                <j.2:profession rdf:resource="http://fr.dbpedia.org/resource/Acteur"/>
+                                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Renée_Estevez"/>
+                                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Emilio_Estevez"/>
+                                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Acteur"/>
+                                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Charlie_Sheen"/>
+                                                <j.2:lieuDeNaissance rdf:resource="http://fr.dbpedia.org/resource/New_York"/>
+                                                <j.1:profession rdf:resource="http://fr.dbpedia.org/resource/Acteur"/>
+                                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Martin_Sheen"/>
+                                                <j.1:birthPlace rdf:resource="http://fr.dbpedia.org/resource/New_York"/>
+                                              </rdf:Description>
+                                            </j.1:wikiPageWikiLink>
+                                            <j.1:birthPlace rdf:resource="http://fr.dbpedia.org/resource/New_York"/>
+                                          </rdf:Description>
+                                        </j.1:wikiPageWikiLink>
+                                        <j.1:wikiPageWikiLink>
+                                          <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Michael_Douglas">
+                                            <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Acteur"/>
+                                            <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Oliver_Stone"/>
+                                            <j.1:wikiPageWikiLink>
+                                              <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Wall_Street">
+                                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/New_York"/>
+                                              </rdf:Description>
+                                            </j.1:wikiPageWikiLink>
+                                            <j.1:profession rdf:resource="http://fr.dbpedia.org/resource/Acteur"/>
+                                            <j.2:profession rdf:resource="http://fr.dbpedia.org/resource/Acteur"/>
+                                          </rdf:Description>
+                                        </j.1:wikiPageWikiLink>
+                                        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Série_télévisée"/>
+                                        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Emilio_Estevez"/>
+                                        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Ramon_Estevez"/>
+                                        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/New_York"/>
+                                        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Mon_oncle_Charlie"/>
+                                        <j.0:_ rdf:resource="http://fr.dbpedia.org/resource/Acteur"/>
+                                        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Spin_City"/>
+                                      </rdf:Description>
+                                    </j.1:wikiPageWikiLink>
+                                    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Série_télévisée"/>
+                                    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Box-office"/>
+                                    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Emilio_Estevez"/>
+                                    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Tom_Cruise"/>
+                                    <j.1:profession rdf:resource="http://fr.dbpedia.org/resource/Acteur"/>
+                                    <j.0:_ rdf:resource="http://fr.dbpedia.org/resource/Acteur"/>
+                                  </rdf:Description>
+                                </j.1:wikiPageWikiLink>
+                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Janet_Templeton"/>
+                                <j.1:wikiPageWikiLink>
+                                  <rdf:Description rdf:about="http://fr.dbpedia.org/resource/The_Arrival">
+                                    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Charlie_Sheen"/>
+                                  </rdf:Description>
+                                </j.1:wikiPageWikiLink>
+                                <j.1:profession rdf:resource="http://fr.dbpedia.org/resource/Acteur"/>
+                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Né_un_4_juillet"/>
+                                <j.1:wikiPageWikiLink>
+                                  <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Sean_Penn">
+                                    <j.1:birthPlace>
+                                      <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Santa_Monica">
+                                        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Sean_Penn"/>
+                                      </rdf:Description>
+                                    </j.1:birthPlace>
+                                    <j.1:wikiPageWikiLink>
+                                      <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Malibu_(Californie)">
+                                        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Martin_Sheen"/>
+                                        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Sean_Penn"/>
+                                        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Santa_Monica"/>
+                                        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Mon_oncle_Charlie"/>
+                                      </rdf:Description>
+                                    </j.1:wikiPageWikiLink>
+                                    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Tom_Cruise"/>
+                                    <j.1:profession rdf:resource="http://fr.dbpedia.org/resource/Acteur"/>
+                                    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Oliver_Stone"/>
+                                    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Mon_oncle_Charlie"/>
+                                    <j.2:lieuDeNaissance rdf:resource="http://fr.dbpedia.org/resource/Santa_Monica"/>
+                                    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Acteur"/>
+                                    <j.0:_ rdf:resource="http://fr.dbpedia.org/resource/Acteur"/>
+                                    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Santa_Monica"/>
+                                  </rdf:Description>
+                                </j.1:wikiPageWikiLink>
+                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Oliver_Stone"/>
+                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Platoon"/>
+                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Spin_City"/>
+                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Tom_Cruise"/>
+                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Renée_Estevez"/>
+                                <j.1:movie rdf:resource="http://fr.dbpedia.org/resource/Platoon"/>
+                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Emilio_Estevez"/>
+                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Série_B"/>
+                                <j.1:birthPlace rdf:resource="http://fr.dbpedia.org/resource/New_York"/>
+                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Young_Guns_(film)"/>
+                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Mon_oncle_Charlie"/>
+                                <j.2:lieuDeNaissance rdf:resource="http://fr.dbpedia.org/resource/New_York"/>
+                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Acteur"/>
+                                <j.0:_ rdf:resource="http://fr.dbpedia.org/resource/Acteur"/>
+                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Martin_Sheen"/>
+                                <j.1:wikiPageWikiLink>
+                                  <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Les_Trois_Mousquetaires_(film,_1993)">
+                                    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Charlie_Sheen"/>
+                                    <j.1:starring rdf:resource="http://fr.dbpedia.org/resource/Charlie_Sheen"/>
+                                    <j.2:acteur rdf:resource="http://fr.dbpedia.org/resource/Charlie_Sheen"/>
+                                  </rdf:Description>
+                                </j.1:wikiPageWikiLink>
+                                <j.1:wikiPageWikiLink>
+                                  <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Baseball">
+                                    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/New_York"/>
+                                  </rdf:Description>
+                                </j.1:wikiPageWikiLink>
+                                <j.1:tvShow rdf:resource="http://fr.dbpedia.org/resource/Mon_oncle_Charlie"/>
+                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Columbia_Broadcasting_System"/>
+                                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Ramon_Estevez"/>
+                                <j.1:tvShow rdf:resource="http://fr.dbpedia.org/resource/Spin_City"/>
+                              </rdf:Description>
+                            </j.1:wikiPageWikiLink>
+                            <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Cinéma_américain"/>
+                            <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/New_York"/>
+                            <j.2:acteur rdf:resource="http://fr.dbpedia.org/resource/Charlie_Sheen"/>
+                            <j.1:writer rdf:resource="http://fr.dbpedia.org/resource/Oliver_Stone"/>
+                            <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Né_un_4_juillet"/>
+                            <j.1:director rdf:resource="http://fr.dbpedia.org/resource/Oliver_Stone"/>
+                            <j.1:starring rdf:resource="http://fr.dbpedia.org/resource/Charlie_Sheen"/>
+                            <j.2:scénario rdf:resource="http://fr.dbpedia.org/resource/Oliver_Stone"/>
+                            <j.2:réalisation rdf:resource="http://fr.dbpedia.org/resource/Oliver_Stone"/>
+                            <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Oliver_Stone"/>
+                          </rdf:Description>
+                        </j.1:wikiPageWikiLink>
+                        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/New_York"/>
+                        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Musique_de_film"/>
+                        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Oliver_Stone"/>
+                        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Acteur"/>
+                      </rdf:Description>
+                    </j.1:wikiPageWikiLink>
+                    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Box-office"/>
+                    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Acteur"/>
+                  </rdf:Description>
+                </j.1:wikiPageWikiLink>
+                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Né_un_4_juillet"/>
+                <j.1:birthPlace rdf:resource="http://fr.dbpedia.org/resource/New_York"/>
+                <j.2:lieuDeNaissance rdf:resource="http://fr.dbpedia.org/resource/New_York"/>
+                <j.1:movie rdf:resource="http://fr.dbpedia.org/resource/Né_un_4_juillet"/>
+                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Platoon"/>
+                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/New_York"/>
+                <j.1:movie rdf:resource="http://fr.dbpedia.org/resource/Platoon"/>
+                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Michael_Douglas"/>
+                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Box-office"/>
+                <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Wall_Street"/>
+              </rdf:Description>
+            </j.1:wikiPageWikiLink>
+            <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Spin_City"/>
+            <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Wall_Street"/>
+            <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Baseball"/>
+            <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Columbia_Broadcasting_System"/>
+          </rdf:Description>
+        </j.1:wikiPageWikiLink>
+        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Charlie_Sheen"/>
+        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Série_télévisée"/>
+        <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Martin_Sheen"/>
+      </rdf:Description>
+    </j.1:wikiPageWikiLink>
+    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Charlie_Sheen"/>
+    <j.1:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Columbia_Broadcasting_System"/>
+    <j.1:channel rdf:resource="http://fr.dbpedia.org/resource/Columbia_Broadcasting_System"/>
+    <j.2:chaîne rdf:resource="http://fr.dbpedia.org/resource/Columbia_Broadcasting_System"/>
+  </rdf:Description>
+</rdf:RDF>

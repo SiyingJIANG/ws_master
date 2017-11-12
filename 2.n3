@@ -1,0 +1,3 @@
+@prefix dbpedia-owl:	<http://dbpedia.org/ontology/> .
+@prefix dbpedia-fr:	<http://fr.dbpedia.org/resource/> .
+dbpedia-fr:École_centrale_de_Lyon	dbpedia-owl:wikiPageWikiLink	dbpedia-fr:École_centrale_de_Lyon .

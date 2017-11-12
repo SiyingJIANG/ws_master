@@ -1,0 +1,4 @@
+@prefix dbpedia-owl:	<http://dbpedia.org/ontology/> .
+@prefix dbpedia-fr:	<http://fr.dbpedia.org/resource/> .
+dbpedia-fr:Stade_Geoffroy-Guichard	dbpedia-owl:wikiPageWikiLink	dbpedia-fr:Stade_Geoffroy-Guichard .
+dbpedia-fr:Olympique_lyonnais_-_AS_Saint-Étienne_en_football	dbpedia-owl:wikiPageWikiLink	dbpedia-fr:Stade_Geoffroy-Guichard .

@@ -1,0 +1,12 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dbpedia-fr="http://fr.dbpedia.org/resource/"
+    xmlns:dbpedia-owl="http://dbpedia.org/ontology/">
+  <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Olympique_lyonnais_-_AS_Saint-Étienne_en_football">
+    <dbpedia-owl:wikiPageWikiLink>
+      <rdf:Description rdf:about="http://fr.dbpedia.org/resource/Stade_Geoffroy-Guichard">
+        <dbpedia-owl:wikiPageWikiLink rdf:resource="http://fr.dbpedia.org/resource/Stade_Geoffroy-Guichard"/>
+      </rdf:Description>
+    </dbpedia-owl:wikiPageWikiLink>
+  </rdf:Description>
+</rdf:RDF>
